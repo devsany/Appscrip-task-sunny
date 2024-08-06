@@ -7,6 +7,98 @@
   pointer-events: none;
 }
 
+/* css start */
+
+/* header */
+.logo{
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43.57px;
+  letter-spacing: 1px;
+  color:black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-img{
+  /* margin-left: 36px; */
+}
+.header-dashboard{
+  /* margin-right: 96px; */
+}
+.logo{
+  margin-left: 36px;
+}
+/* header end */
+
+
+/* navbar */
+
+.nav{
+  /* padding: 10px; */
+  background-color: azure;
+  /* box-shadow: 0px 0px 20px 0px #282c34; */
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top:60px ;
+}
+.nav ul{
+  display: flex;
+  justify-content: center;
+}
+.nav ul li {
+  text-decoration: none;
+  margin-left: 40px;
+  /* margin-left: 56px; */
+  /* align-items: center; */
+  list-style: none;
+  padding: 10px;
+
+}
+.nav ul li:hover{
+  color: wheat;
+  background-color: #282c34;
+}
+.nav ul li a:hover{
+  color: wheat;
+  background-color: #282c34;
+}
+.nav ul li a{
+  text-decoration: none;
+  color: black;
+
+}
+.active{
+  color: Gray;
+}
+ /* nav css end */
+
+ /* page-description start */
+
+ .page-Description h1{
+  font-family: Simplon Norm;
+font-size: 60px;
+font-weight: 400;
+line-height: 72px;
+letter-spacing: 1px;
+text-align: center;
+
+ }
+ .page-Description h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 22px;
+font-weight: 400;
+width: 100%;
+display: flex;
+justify-content: center;
+line-height: 40px;
+text-align: center;
+ }
+ 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
