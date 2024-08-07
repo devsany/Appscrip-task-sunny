@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 
 const Header = () => {
+  const [nav,setNav] = useState(false);
+  const hideShowNav=()=>{
+    setNav(!nav)
+  }
   return (
     <div>
       <div className="header">
+        <div className="burgurIcon" onClick={hideShowNav}><img src="burger-bar.png" alt="" /></div>
         <div className="logo-img">
           <svg
             width="36"
@@ -21,7 +28,7 @@ const Header = () => {
         <div className="logo">LOGO</div>
         <div className="header-dashboard">
           <svg
-            width="244"
+            width="150"
             height="24"
             viewBox="0 0 244 24"
             fill="none"
@@ -97,7 +104,34 @@ const Header = () => {
           </svg>
         </div>
       </div>
-   
+    <div>
+    <div className={nav?"nav":"none"}>
+        <ul>
+          <li>
+            <NavLink to="/">SHOP</NavLink>
+          </li>
+          <li>
+            <NavLink to="/skill">Skill</NavLink>
+          </li>
+          <li>
+            <NavLink to="/storie">STORIE</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/about">ABOUT</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/contact">CONTACT</NavLink>
+          </li>
+        </ul>
+      </div>
+      <div className="page-Description">
+        <h1>DISCOVER OUR PRODUCTS</h1>
+        <h4>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.
+        </h4>
+      </div>
+    </div>
     </div>
   );
 };
