@@ -1,3 +1,9 @@
 export const API_LOADING = 'API_LOADING';
 export const API_ERROR = 'API_ERROR';
 export const API_DATA = 'API_DATA';
+export const PRICE_HIGH_TO_LOW='PRICE_HIGH_TO_LOW';
+export const PRICE_LOW_TO_HIGH='PRICE_LOW_TO_HIGH';
+export const WOMEN_CLOTHING='WOMEN_CLOTHING';
+export const MEN_CLOTHING='MEN_CLOTHING';
+export const JEWELERY='JEWELERY';
+export const ELECTRONICS='ELECTRONICS';
