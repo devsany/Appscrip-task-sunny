@@ -9,4 +9,5 @@ Made Ecommerce site:
     *  npm start
 
  ![main ecompage](https://github.com/user-attachments/assets/39fcf1f9-9030-4243-8a5e-2b7aaecbb13b)
+      *Data is fetch from an api [fake store](https://fakestoreapi.com/products)
 
